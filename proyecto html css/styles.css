@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+/* ------------------------------Nav bar style----------------------- */
+
+.header
+{   
+    background-color:#051C2C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.header .logo img
+{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    padding-bottom: 10px;
+}
+.header .logo img:hover
+{
+    transform: scale(1.2);
+}
+.header .NavLinks
+{
+    list-style: none;
+}
+.header .NavLinks li
+{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .NavLinks li:hover
+{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.header .NavLinks a
+{
+    font-size: 700;
+    text-decoration: none;
+    color: #00F1FF;
+}
+.header .btn button
+{
+    font-weight: 700;
+    color: #00F1FF;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #1c0d2b;
+    transition: all 0.3s ease 0s;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.header .btn button:hover
+{
+    transform: scale(1.2);
+}
+/*------------------------------------nav bar style end-----------------------------------*/
+body
+{
+    background-color: #1c0d2b ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+/*------------------------------------banner---------------------------------------------*/
+body .banner
+{
+    background-image: url(img/retro\ banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 20px;
+    color: #00F1FF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body .intro
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #E0457B;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+/*---------------------------------banner end-------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------*/
+
+.contenedor
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    background-color: #ED9B33;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.contenedor .card
+{
+    height: 500px;
+    margin: 30px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.contenedor .card img
+{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+.contenedor .overlay
+{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, .5);
+    color: white;
+    bottom: -212px;
+    transition: .5s;
+}
+.overlay h1
+{
+    margin: 10px;
+    font-size: 40px;
+}
+.overlay p
+{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.contenedor .card:hover
+{
+    cursor: pointer;
+}
+.contenedor .card:hover .overlay
+{
+    height: 350px;
+    width: 350px;
+    background: black;
+}
+.contenedor .card:hover p
+{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor .card:hover img
+{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+footer
+{
+    width: 100%;
+    min-height: 50px;
+    background-color: #051C2C;
+}
